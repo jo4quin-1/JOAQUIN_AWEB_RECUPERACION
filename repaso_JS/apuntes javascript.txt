@@ -1,0 +1,10 @@
+formas de implementar JS
+
+- en linea (mala practica)
+- dentro de la etiqueta "script" en el body del HTML (mala practica)
+- poniendo debajo al final del head  <script src="ruta" defer></script>
+
+
+FUNCIONES:
+
+
