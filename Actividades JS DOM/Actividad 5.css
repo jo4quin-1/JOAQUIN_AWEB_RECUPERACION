@@ -1,0 +1,36 @@
+.texto{
+    width: 10rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.lista{
+    margin-left: 5rem;
+}
+
+.boton{
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+    color: green;
+}
+.boton:hover{
+    border-color: lime;
+    box-shadow: none;
+}
+
+
+
+
+.boton_estilo{
+    margin-left: 3rem;
+    background-color: white;
+    color: red;
+}
+
+.boton_estilo:hover{
+    margin-left: 3rem;
+    background-color: rgb(245, 245, 245);
+    color: rgb(192, 0, 0);
+    border-color: red;
+}
+
