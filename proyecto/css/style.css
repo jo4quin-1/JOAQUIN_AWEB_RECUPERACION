@@ -1,0 +1,325 @@
+/* reseteo de etiquetas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* etiquetas generales */
+
+body{
+    font-family: "Montserrat", sans-serif;
+    width: 100vw;
+    height: 120vh;
+    color: var(--colorletra);
+    background-color: var(--colorbody);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: var(--fontSize);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* etiquetas tipo clase */
+
+/* header */
+
+.header{
+    width: var(--dimension-body);
+    height: var(--dimension-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--colorprincipal);  
+}
+
+.header__h1{
+    margin-left: 5rem;
+}
+
+.header__nav{
+    display: flex;
+    margin-right: 5rem;
+    gap: 1.5rem;
+}
+
+.header__nav__button {
+  padding: 0.4rem 0.8rem;
+  border: 0.16rem solid #ccc;
+  border-color: var(--colorbotonbordeheader);
+  border-radius: 0.2rem;
+  background: none;
+  cursor: pointer;
+  width: 8rem;
+  color: var(--colorbotontextoheader);
+  background-color: var(--colorbotonheader);
+}
+
+
+/* main */
+
+.main{
+    width: var(--dimension-body);
+    height:var(--dimension-main);
+    background-color: var(--colorprincipal);
+}
+
+/* seccion 1 */
+.main__section1__article{
+    height: 40%;
+    background-color: var(--colorsecundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__section1__article__h2{
+    display: flex;  
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.main__section1__article__p{
+    padding-bottom: 2rem;
+    max-width: 30rem;
+    text-align: center;
+}
+
+.main__section1__article__button{
+    width: 6.5rem;
+    height: 3rem;
+    background-color: var(--colorboton);
+    color: var(--colorbotontexto);
+    border-radius: 0.2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+
+/* seccion 2 */
+
+.main__section2{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.main__section2__p{
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    max-width: 40%;
+}
+
+.main__section2__h2{
+    margin: 2rem 0rem 2rem;
+}
+
+.main__section2__article{
+    width: 60%;
+}
+
+.main__section2--show img{
+    width: var(--imgSize);
+    margin-top: 1rem;
+}
+
+.main__section2 button {
+    background: none;
+    border: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+    color: var(--colorbotoncarrusel);
+}
+
+.main__section2__p2{
+    text-align: center;
+    display: flex;
+    
+}
+
+.main__section2__a{
+    text-decoration: none;
+    color: var(--colorlearnmore);
+    margin-bottom: 1.5rem;
+}
+
+.main__section2__article{
+    display: flex;
+    /* margin-bottom: 2rem; */
+}
+
+/* footer */
+
+.footer{
+    width: var(--dimension-body);
+    height:var(--dimension-footer);
+    background-color: var(--colorsecundario);
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 4rem; */
+}
+
+.footer__section1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.footer__section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__section2__table{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    width: 70%;
+    margin: 0rem;
+    padding: 0rem;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+
+
+
+.footer__section2__table th,
+.footer__section2__table td {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+   
+}   
+
+
+
+
+
+/* GRUPOS DE VARIABLES */
+
+
+ .body_claro_mitad{
+    /* colores modo claro*/
+    --colorbody:black;
+    --colorletra:black;
+    --colorprincipal: white;
+    --colorsecundario: rgb(238, 238, 238);
+    --colorbotonheader:white;
+    --colorbotontextoheader:black;
+    --colorbotonbordeheader:black;
+    --colorboton: black;
+    --colorbotontexto: white;
+    --colorbotoncarrusel:black;
+    --colorlearnmore:black;
+    /* letra */
+    --tipo-letra: "Montserrat", sans-serif;
+    /* dimensiones */
+    --dimension-body: 45%;
+    --dimension-header: 5%;
+    --dimension-main: 80%;
+    --dimension-footer: 15%;
+    --fontSize: 80%;
+    --imgSize: 100%;
+}
+
+
+
+.body_oscuro_mitad{
+    /* colores modo claro*/
+    --colorbody:white;
+    --colorletra:white;
+    --colorprincipal: #212d39;
+    --colorsecundario:#18212b;
+    --colorbotonheader:#212d39;
+    --colorbotontextoheader:white;
+    --colorbotonbordeheader:white;
+    --colorboton: white;
+    --colorbotontexto: black;
+    --colorbotoncarrusel:white;
+    --colorlearnmore:white;
+    /* letra */
+    --tipo-letra: "Montserrat", sans-serif;
+    /* dimensiones */
+    --dimension-body: 45%;
+    --dimension-header: 5%;
+    --dimension-main: 80%;
+    --dimension-footer: 15%;
+    --fontSize:80%;
+    --imgSize: 100%;
+}
+
+ .body_claro_ampliado{
+    /* colores modo claro*/
+    --colorbody:black;
+    --colorletra:black;
+    --colorprincipal: white;
+    --colorsecundario: rgb(238, 238, 238);
+    --colorbotonheader:white;
+    --colorbotontextoheader:black;
+    --colorbotonbordeheader:black;
+    --colorboton: black;
+    --colorbotontexto: white;
+    --colorbotoncarrusel:black;
+    --colorlearnmore:black;
+    /* letra */
+    --tipo-letra: "Montserrat", sans-serif;
+    /* dimensiones */
+    --dimension-body: 100%;
+    --dimension-header: 5%;
+    --dimension-main: 80%;
+    --dimension-footer: 15%;
+    --fontSize: 80%;
+    --imgSize: 50%;
+}
+.body_oscuro_ampliado{
+    /* colores modo claro */
+    --colorbody:white;
+    --colorletra:white;
+    --colorprincipal: #212d39;
+    --colorsecundario:#18212b;
+    --colorbotonheader:#212d39;
+    --colorbotontextoheader:white;
+    --colorbotonbordeheader:white;
+    --colorboton: white;
+    --colorbotontexto: black;
+    --colorbotoncarrusel:white;
+    --colorlearnmore:white;
+    /* letra */
+    --tipo-letra: "Montserrat", sans-serif;
+    /* dimensiones */
+    --dimension-body: 100%;
+    --dimension-header: 5%;
+    --dimension-main: 80%;
+    --dimension-footer: 15%;
+    --fontSize: 80%;
+    --imgSize: 50%;
+}
+
+/*JAVASCRIPT*/
+
+.main__section2 img{
+    display: none;
+}
